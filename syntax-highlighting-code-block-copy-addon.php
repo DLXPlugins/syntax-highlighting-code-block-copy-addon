@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:  Syntax-highlighting Code Block Copy Addon
- * Plugin URI:   https://github.com/DLXPlugins/syntax-highlighter-code-block-copy-addon
- * Description:  Adds a copy icon to the code block. Can be disabled in the block settings or per filter.
+ * Plugin URI:   https://github.com/DLXPlugins/syntax-highlighting-code-block-copy-addon
+ * Description:  Adds a copy icon to the code block. Can be disabled in the block settings or per filter or per block editor settings.
  * Version:      1.0.0
  * Author:       Ronald Huereca
  * Author URI:   https://dlxplugins.com
