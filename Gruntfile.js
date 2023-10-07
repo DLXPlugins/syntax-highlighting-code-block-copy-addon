@@ -3,14 +3,10 @@ module.exports = function (grunt) {
 		compress: {
 			main: {
 			  options: {
-				archive: 'alerts-dlx.zip'
+				archive: 'syntax-highlighting-code-block-copy-addon.zip'
 			  },
 			  files: [
-				{src: ['alerts-dlx.php'], dest: '/', filter: 'isFile'}, // includes files in path
-				{src: ['readme.txt'], dest: '/', filter: 'isFile'},
-				{src: ['php/**'], dest: '/'}, // includes files in path and its subdirs
-				{src: ['lib/**'], dest: '/'}, // includes files in path and its subdirs
-				{src: ['dist/**'], dest: '/'}, // includes files in path and its subdirs
+				{src: ['syntax-highlighting-code-block-copy-addon.php'], dest: '/', filter: 'isFile'}, // includes files in path
 				{src: ['build/**'], dest: '/'}, // includes files in path and its subdirs
 			  ]
 			}

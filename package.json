@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "wp-scripts start copy=./src/index.js copy-frontend=./src/copy.js --env mode=development",
-    "build": "wp-scripts build copy=./src/index.js --env mode=production"
+    "build": "wp-scripts build copy=./src/index.js copy-frontend=./src/copy.js --env mode=production"
   },
   "author": "Ronald Huereca <ronald@dlxplugins.com>",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@wordpress/components": "^25.9.0",
     "@wordpress/scripts": "^26.14.0",
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-compress": "^2.0.0",
     "webpack-remove-empty-scripts": "^1.0.4"
   }
 }
