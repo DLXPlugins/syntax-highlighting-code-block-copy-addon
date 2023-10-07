@@ -1,0 +1,17 @@
+{
+  "name": "syntax-highlighting-code-block-copy-addon",
+  "version": "1.0.0",
+  "description": "Adds a copy feature to the code block.",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start copy=./src/index.js copy-frontend=./src/copy.js --env mode=development",
+    "build": "wp-scripts build copy=./src/index.js --env mode=production"
+  },
+  "author": "Ronald Huereca <ronald@dlxplugins.com>",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@wordpress/components": "^25.9.0",
+    "@wordpress/scripts": "^26.14.0",
+    "webpack-remove-empty-scripts": "^1.0.4"
+  }
+}
