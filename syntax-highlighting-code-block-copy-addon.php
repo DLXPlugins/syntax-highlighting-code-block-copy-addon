@@ -126,7 +126,7 @@ function on_render() {
 	add_action( 'wp_footer', __NAMESPACE__ . '\render_footer_styles' );
 
 	add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\enqueue_block_scripts' );
-	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_block_scripts_frontend' );
+	add_action( 'wp_footer', __NAMESPACE__ . '\enqueue_block_scripts_frontend' );
 }
 
 /**
@@ -168,13 +168,14 @@ function enqueue_block_scripts_frontend() {
 	$asset_file = include plugin_dir_path( DLX_SYNTAX_HIGHLIGHTER_CODE_BLOCK_COPY_ADDON_FILE ) . 'build/copy-frontend.asset.php';
 
 	// Enqueue JS.
-	wp_enqueue_script(
+	wp_register_script(
 		'syntax-highlighting-code-block-copy-addon-frontend',
 		plugins_url( 'build/copy-frontend.js', DLX_SYNTAX_HIGHLIGHTER_CODE_BLOCK_COPY_ADDON_FILE ),
 		$asset_file['dependencies'],
 		$asset_file['version'],
 		true
 	);
+	wp_print_scripts( 'syntax-highlighting-code-block-copy-addon-frontend' );
 }
 
 /**
